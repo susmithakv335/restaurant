@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/23a3cde065.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./restaurant.css">
+</head>
+<style>
+    .nav-item a:hover {
+        background-color: rgb(207, 188, 188);
+    }
+
+    body {
+        height: 5000px;
+    }
+</style>
+<body>
+    <div class="a text-white">
+
+        <nav class="navbar navbar-expand-lg  navbar-bg">
+            <div class=" a1 container"></div>
+            <i class="fas fa-2x fa-utensils text-white"></i>
+            <!-- <a class="navbar-brand text-white" href="#">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav   me-auto mb-2 mb-lg-0 ms-3">
+                    <li class="nav-item ">
+                        <a class="nav-link active text-white   " aria-current="page" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link active text-white " aria-current="page" href="#">About </a>
+
+                    </li>
+                    <li>
+                        <a class="nav-link active text-white  " aria-current="page" href="#">Menu </a>
+                    </li>
+                    <li>
+                        <a class="nav-link active text-white  " aria-current="page" href="#">Gallery </a>
+                    </li>
+                    <li>
+                        <a class="nav-link active  text-white " aria-current="page" href="#">Events </a>
+                    <li>
+                        <a class="nav-link active text-white  " aria-current="page" href="#">Contacts</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="1000">
+                    <img src="btimg/rest1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="btimg/rest2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="btimg/rest3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class=" ">
+            <h1 class="text-center"><u>Today's Special Menu</u></h1>
+            <h2 class="text-center mt-5">Simple Way To Start Eating Healthier </h2>
+            <p>
+                A salad is a dish consisting of mixed pieces of food, typically with at least one raw ingredient. They
+                are
+                often dressed, and typically served at room temperature or chilled, though some can be served warm.
+
+            </p>
+            <div class="row ms-5 ">
+                <div class="col-4   ms-5" style="width: 18rem;">
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <img src="btimg/sal3.jpg" class="w-100 pb-3" alt="">
+                    <div class="card-body">
+
+                        <h5 class="card-title">pasta Salad</h5>
+                        <p class="card-text"></p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            order now
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-black">
+                                        <form action="">
+                                            <label for="name">name</label>
+                                            <input type="text" id="name"><br>
+                                            <br>
+                                            <label for="place">place</label>
+                                            <input type="text" id="place"><br>
+                                            <br>
+                                            <label for="qua">Quantity(in gms)</label>
+                                            <input type="text" id="Quantity"><br>
+                                            <br>
+                                            <select class="form-select form-select-sm"
+                                                aria-label=".form-select-sm example">
+                                                <option selected>Open this select salad</option>
+                                                <option value="1">pasta Salad</option>
+                                                <option value="2">Broccolli salad</option>
+                                                <option value="3">Corn Salad</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">order</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-4 ms-5" style="width: 18rem;">
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <img src="btimg/sal2.jpg " alt="">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Broccolli salad</h5>
+                        <p class="card-text"> </p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            order now
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-black">
+                                        <form action="">
+                                            <label for="name">name</label>
+                                            <input type="text" id="name"><br>
+                                            <br>
+                                            <label for="place">place</label>
+                                            <input type="text" id="place"><br>
+                                            <br>
+                                            <label for="qua">Quantity(in gms)</label>
+                                            <input type="text" id="Quantity"><br>
+                                            <br>
+                                            <select class="form-select form-select-sm"
+                                                aria-label=".form-select-sm example">
+                                                <option selected>Open this select salad</option>
+                                                <option value="1">pasta Salad</option>
+                                                <option value="2">Broccolli salad</option>
+                                                <option value="3">Corn Salad</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary">order</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="col-4 ms-5" style="width: 18rem;">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <img src="btimg/sal1.jpg " alt="">
+
+                <div class="card-body">
+                    <h5 class="card-title">Corn Salad</h5>
+                    <p class="card-text"> </p>
+                    <!-- <button type="button" class="btn btn-primary">order now</button> -->
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        order now
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-black">
+                                    <form action="">
+                                        <label for="name">name</label>
+                                        <input type="text" id="name"><br>
+                                        <br>
+                                        <label for="place">place</label>
+                                        <input type="text" id="place"><br>
+                                        <br>
+                                        <label for="qua">Quantity(in gms)</label>
+                                        <input type="text" id="Quantity"><br>
+                                        <br>
+                                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                            <option selected>Open this select salad</option>
+                                            <option value="1">pasta Salad</option>
+                                            <option value="2">Broccolli salad</option>
+                                            <option value="3">Corn Salad</option>
+                                        </select>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <h2 class="m"><u>Main Course</u></h2>
+        <div class="row">
+<div class="col-4 ms-5 mt-3" style="width: 18rem;">
+<img src="btimg/main1.jpg" alt="">
+<h3>Butter Chicken</h3>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" >
+    Order now
+  </button>
+  </div>
+
+
+<div class="col-4 ms-5" style="width: 18rem;">
+    <img src="btimg/main2.jpg" alt="">
+    <h3>palak paneer</h3>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" >
+        Order now
+      </button>
+      
+    <!-- </div> -->
+</div>
+<div class="col-4 ms-5" style="width: 18rem;">
+    <img src="btimg/main3.jpg" alt="">
+    <h3>Mutton rogan ghosh</h3>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" >
+        Order now
+      </button>
+      
+    <!-- </div> -->
+</div>
+<div class="col-4 ms-5" style="width: 18rem;">
+    <img src="btimg/main8.jpg" alt="">
+    <h3>Chicken  Biriyani</h3>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" >
+        Order now
+      </button>   
+</div>
+<div class="col-4 ms-5" style="width: 18rem;">
+    <img src="btimg/main7.jpg" alt="">
+    <h3>Fried Rice</h3>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" >
+        Order now
+      </button>   
+</div>
+<div class="col-4 ms-5" style="width: 18rem;">
+    <img src="btimg/main9.jpg" alt="">
+    <h3>Butter Naan</h3>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" >
+        Order now
+      </button>   
+</div>
+<div class="col-4 ms-5" style="width: 18rem;">
+    <img src="btimg/main6.jpg" alt="">
+    <h3>SPICY PORK VINDALOO</h3>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" >
+        Order now
+      </button>   
+</div>
+<div class="col-4 ms-5" style="width: 18rem;">
+    <img src="btimg/main5.jpg" alt="">
+    <h3>PERSIAN CHICKEN JOOJEH KEBABS</h3>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" >
+        Order now
+      </button>   
+</div>
+<h2 class="d"><u>Desserts</u></h2>
+<div class="row">
+
+<div  class="col-4 ms-5 mt-3" style="width: 18rem;">
+<img src="./btimg/des1.jpg" alt="">
+<h3>Chocolate lava</h3>
+<button class="btn btn-primary">order now </button>
+</div>
+<div  class="col-4 ms-5 mt-3" style="width: 18rem;">
+    <img src="./btimg/des6.jpg" alt="">
+    <h3>Apple pie</h3>
+    <button class="btn btn-primary">order now </button>
+</div>
+<div  class="col-4 ms-5 mt-3" style="width: 18rem;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS0X56pDiVX1DlvD8IeJ1QS6bP7H0xvIpPig&usqp=CAU" alt="">
+    <h3>Gulab jamun</h3>
+    <button class="btn btn-primary">order now </button>
+</div>
+<div  class="col-4 ms-5 mt-3" style="width: 18rem;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRetQRw-xjgUIAeXxGYKKlZg6CoPU9xmOQfxA&usqp=CAU" alt="">
+    <h3>Kunafa</h3>
+    <button class="btn btn-primary">order now </button>
+</div>
+<div  class="col-4 ms-5 mt-3" style="width: 18rem;">
+    <img src="data:image/jpeg;base64,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" alt="">
+    <h3>Rasmalai</h3>
+    <button class="btn btn-primary">order now </button>
+</div>
+<div  class="col-4 ms-5 mt-3" style="width: 18rem;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT7AWE-3pOJ-J4Q3eMhjurEkwgo3jODfyHjA&usqp=CAU" alt="">
+    <h3>Waffles</h3>
+    <button class="btn btn-primary">order now </button>
+</div>
+</div>
+
+
+
+
+
+
+</div>
+
+    
+  
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+ <footer>
+     
+         <div class="row">
+             <div class="footer mt-3 text-black" >
+                 <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrcLb38p7zVoEiEAHZCUDj6XVAjXKc1hKbtA&usqp=CAU" alt="" class="c1"> -->
+                 
+                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrcLb38p7zVoEiEAHZCUDj6XVAjXKc1hKbtA&usqp=CAU" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                  </div>
+               
+                 <ul class="ul1">
+                     <li><a href="#">Menu</a></li>
+                     <li><a href="#">our services</a></li>
+                     <li><a href="#">about us</a></li>
+                     <li><a href="#">contact</a></li>
+                 </ul>
+             </div>
+             <ul class="ul">
+              <i class="fab fa-2x fa-instagram"></i>
+               <i class="fab fa-2x fa-youtube"></i>
+               <i class="fab fa-2x fa-twitter"></i>
+              <i class="fas fa-2x fa-phone-square-alt"></i>
+            </ul>
+         </div>
+   
+ </footer>       
+
+
+
+
+
+
+</header>
+</html>
